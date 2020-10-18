@@ -8,8 +8,6 @@ const validSitesMap: ObjectMap<SiteConfig> = {};
 const validBiddersMap: ObjectMap<BidderConfig> = {};
 const outputData: Bid[][] = [];
 
-// Initialize variables
-
 configData.sites.forEach(site => validSitesMap[site.name] = site);
 configData.bidders.forEach(bidder => validBiddersMap[bidder.name] = bidder);
 
