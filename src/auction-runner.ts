@@ -21,7 +21,6 @@ function processSiteBids(siteBids: SiteBids, unitBidMap: ObjectMap<Bid>) {
 }
 
 function isBidValid(siteBids: SiteBids, unitBidMap: ObjectMap<Bid>, bid: Bid): boolean {
-    const adjustedBid = getAdjustedBid(bid);
     const siteConfig = validSitesMap[siteBids.site];
     const bidderConfig = validBiddersMap[bid.bidder];
 
