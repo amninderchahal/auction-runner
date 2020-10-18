@@ -30,7 +30,7 @@ function isBidValid(siteBids: SiteBids, unitBidMap: ObjectMap<Bid>, bid: Bid): b
         && unitBidMap[bid.unit] != null
         && siteConfig.bidders.includes(bid.bidder)
         && siteBids.units.includes(bid.unit)
-        && adjustedBid >= siteConfig.floor;
+        && bid.bid >= siteConfig.floor;
 }
 
 function addBidsToOutput(unitBidMap: ObjectMap<Bid>) {
